@@ -124,7 +124,7 @@ with st.sidebar:
                               ("Daily", "Weekly", "Monthly", "Quarterly"),
     )
     chart_selection = st.selectbox("Select a chart type",
-                                   ("Area"))
+                                   ("Bar","Pie","Area"))
 
 # Prepare data based on selected time frame
 if time_frame == 'Daily':
