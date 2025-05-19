@@ -124,7 +124,7 @@ with st.sidebar:
                               ("Daily", "Weekly", "Monthly", "Quarterly"),
     )
     chart_selection = st.selectbox("Select a chart type",
-                                   ("Bar", "Area"))
+                                   ("Area"))
 
 # Prepare data based on selected time frame
 if time_frame == 'Daily':
@@ -141,7 +141,7 @@ st.subheader("All-Time Statistics")
 
 metrics = [
     ("Total Subscribers", "NET_SUBSCRIBERS", '#29b5e8'),
-    ("Total Views", "VIEWS", '#FF9F36'),
+    ("Total Views", "VIEWS", '#FF9F50'),
     ("Total Watch Hours", "WATCH_HOURS", '#D45B90'),
     ("Total Likes", "LIKES", '#7D44CF')
 ]
