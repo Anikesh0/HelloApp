@@ -117,7 +117,7 @@ with st.sidebar:
     
     max_date = df['DATE'].max().date()
     min_date = df['DATE'].min().date()
-    default_start_date = max_date - timedelta(days=365)  # Show a year by default
+    default_start_date = min_date
     default_end_date = max_date
     start_date = st.date_input("Start date", default_start_date, min_value=df['DATE'].min().date(), max_value=max_date)
     end_date = st.date_input("End date", default_end_date, min_value=df['DATE'].min().date(), max_value=max_date)
