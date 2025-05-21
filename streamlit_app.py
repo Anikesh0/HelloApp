@@ -147,7 +147,7 @@ metrics = [
     ("Total Likes", "LIKES", '#7D44CF')
 ]
 
-cols = st.columns(4)
+cols = st.columns(5)
 for col, (title, column, color) in zip(cols, metrics):
     total_value = df[column].sum()
     display_metric(col, title, total_value, df_display, column, color, time_frame)
